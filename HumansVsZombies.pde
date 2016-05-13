@@ -29,7 +29,7 @@ int ANIMATION_FRAMES_PER_FRAME = 5;
 int OBST_AHEAD = 12;
 
 void setup(){
-  size(1200, 1000);  
+  size(1920, 1000);  
   
   //initialize arrays
   zombies = new ArrayList<Zombie>();
