@@ -1,0 +1,53 @@
+---------------------------------------------------------------------------------
+Sean Levorse
+IGME 202 Section 5 (Tuesday/Thursday 11:00-12:15)
+---------------------------------------------------------------------------------
+
+Humans Vs. Zombies: Relase B
+
+---------------------------------------------------------------------------------
+
+User Functionality:
+-When you run the program, the zombie starts chasing the human. If he touches a
+	human, that human becomes a zombie too.
+-You can keep track of how many humans are left in the upper left and how many
+    zombies exist in the upper right
+-If you hit the number keys or click on the specific buttons, various debug modes
+    are toggled:
+        Zombie Tracing     (1) - Shows the lines from each zombie to which human it's 
+            tracking
+        Human Tracing      (2) - Shows the lines from each human to the zombie it's 
+            fleeing, if it is fleeing a zombie
+        Transforms         (3) - Shows the forward and right vectors
+        Future Position    (4) - Shows where the vehicles will be in TIME_AHEAD 
+            frames(default: 10)
+        Velocity           (5) - Shows the vehicles' velocity vectors
+        Obstacle Detection (6) - Shows lines from vehicles to any obstacles in
+            thier site path
+        Steering Force     (7) - Shows the steering force vectors
+-Clicking anywhere else on the screen or pressing 'H' will produce a human
+-Right clicking anywhere on the screen or pressing 'Z' will produce a zombie
+
+
+Reason Behind Design Choices:
+-I chose to make the vehicles seek the center line instead of the center when they
+	hit a wall because it looked more natural. When they were seeking the
+	center, they would often turn back around and run straight into the zombie
+-I used spritesheets from one of the links on myCourses to make the scene look
+    better, but the zombies were hard to distinguish from the humans. To fix this
+    I added in a sims-esque plumbob, green for zombie and red for human.
+-I decided to have two forms of input for everything because when I was testing
+    sometimes I was too lazy to use the mouse.
+
+Above and Beyond features:
+-I used a spritesheet to create animations in the character walking. The links
+    to the spritesheets are below.
+-I created a GUI so that each aspect of debugging can be access individually
+
+Requirements not completed:
+-None that I'm aware of
+
+Resource Citations:
+Zombies: http://opengameart.org/content/zombie-rpg-sprites
+Humans:  http://opengameart.org/content/character-rpg-sprites121.5458
+Trees:   http://www.gamedeveloperstudio.com/graphics/viewgraphic.php?item=1p4i1l3h3e261d155c
